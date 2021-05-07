@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="display-4 text-center my-5">Forms</h1>
+    <div class="container">
+        <!--####################Start Here####################-->
+
+        <!-- Form -->
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="email"> Email address</label>
+                <input class="form-control" type="text" id="email" placeholder="Enter email">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Password" readonly>
+            </div>
+            <div class="form-group">
+                <label for="gander">Gander</label>
+                <select class="form-control" id="gander">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control"  id="message" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">File input</label>
+                <input class="form-control-file" type="file" id="file">
+                <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>What are yo using this service for?</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option1" checked>
+                        Personal
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option1">
+                        Commercial Use
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option1" disabled>
+                        Testing
+                    </label>
+                </div>
+            </fieldset>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox">
+                        Sing up for newsletter
+                    </label>
+                </div>
+                <button class="btn btn-primary mt-2" type="submit">Submit</button>
+        </form>
+
+        <br><br>
+
+        <!-- Inline Form -->
+        <form class="form-inline">
+            <input class="form-control mr-2" type="text" placeholder="Enter name">
+            <input class="form-control mr-2" type="password" placeholder="Password">
+            <div class="form-check">
+                <label class="form-check-label mr-2">
+                    <input class="form-check-input" type="checkbox">
+                    remember me
+                </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
+        <br><br>
+
+        <!-- Validation -->
+        <div class="form-group">
+            <label for="username">
+                username
+                <input class="form-control is-valid" type="text" id="username">
+                <div class="valid-feedback">Username available</div>
+                <small class="form-text text-muted">Must be at least 8 characters</small>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">
+                Password
+                <input class="form-control is-invalid" type="password">
+                <div class="invalid-feedback">This password is not safe</div>
+                <small class="form-text form-muted">Please use a strong password</small>
+            </label>
+        </div>
+
+        
+    </div>
+
+    <div style="margin-top: 100px;"></div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
